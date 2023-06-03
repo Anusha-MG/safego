@@ -18,7 +18,9 @@ const Navbar = () => {
     <div className={style.wrapper}>
         <div className={style.leftMenu}>
             <div className={style.logo}>SafeGo</div>
-
+            <div className={style.menuItem}>Ride</div>
+            <div className={style.menuItem}>Drive</div>
+            <div className={style.menuItem}>More</div>
         </div>
     </div>
   )
