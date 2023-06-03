@@ -22,7 +22,17 @@ const Navbar = () => {
             <div className={style.menuItem}>Drive</div>
             <div className={style.menuItem}>More</div>
         </div>
+        <div>
+            <div className={style.rightMenu}>
+                <div className={style.menuItem}>Help</div>
+                <div className={style.menuItem}>Lance</div>
+                <div className={style.userImageContainer}>
+                    <Image src={walletlogo} width={40} height={40} />
+                </div>
+            </div>
+        </div>
     </div>
+
   )
 }
 
