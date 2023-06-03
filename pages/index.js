@@ -6,7 +6,7 @@ const style = {
 export default function Home() {
   return( 
   <div className={style.wrapper}>
-    { /*navbar*/ }
+    <Navbar />
     <div className={style.main}>
       {/* map */}
     </div>
