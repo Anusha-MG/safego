@@ -1,9 +1,21 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Navbar from "../components/navbar"
+const style = {
+  wrapper: 'h-screen w-screen flex flex-col',
+}
 
 export default function Home() {
-  return <div>
-   <h1>helo s</h1> 
+  return( 
+  <div className={style.wrapper}>
+    { /*navbar*/ }
+    <div className={style.main}>
+      {/* map */}
+    </div>
+    <div className={style.rideRequestContainer}>
+      <div className={style.rideRequest}>
+        {/* location selector */}
+        {/* confirm ride */}
+      </div>
+    </div>
   </div>
-  
+  )
 }
