@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '../Components/Navbar';
 import Map from '../Components/Map';
+import LocationSelector from "../Components/LocationSelector";
 
 const style = {
   wrapper: `h-screen w-screen flex flex-col`,
@@ -21,9 +22,9 @@ export default function Home() {
       </div>
       <div className={style.rideRequestContainer}>
         <div className={style.rideRequest}>
-          {/* <PoolList ride={ride}/>
-          <LocationSelector offer={offer}/>
-          <Confirm offer={offer}/> */}
+          {/* <PoolList ride={ride}/> */}
+          <LocationSelector />
+          {/* <Confirm offer={offer}/> */}
         </div>
       </div>
     </div>
