@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import avatar from '../temp/avatar.jpg'
+import walletlogo from '../assets/walletlogo.png'
 // import { BsPerson } from 'react-icons/bs'
 // import { useContext } from 'react'
 // import { SolWagContext } from '../context/solWagContext'
@@ -18,22 +18,43 @@ const style = {
 }
 
 const Navbar = () => {
-  //const { currentAccount, connectWallet, currentUser, setRide, setOffer, offer } = useContext(SolWagContext)
+
+  //const { currentAccount, connectWallet, currentUser } = useContext(UberContext)
+
 
   return (
-    <div className={style.wrapper}>
-        Navbar
-      {/* <div className={style.leftMenu}>
-        <div className={style.logoContainer}>
-          <Image src={SolWagLogo} height={30} width={30} />
-          <div className={style.logo}>SolWag</div>
-        </div>
-        <div className={style.menuItem} onClick={()=>{setOffer('hidden'); setRide('block'); console.log(offer)}}>Ride Pool</div>
-        <div className={style.menuItem} onClick={()=>{setOffer('block'); setRide('hidden')}}>Offer Pool</div>
-        <div className={`${style.menuItem} md:block hidden`}><a href="https://docs.google.com/document/d/1zsikHSiVQscm2C_g5148DYDx7WeUF6isvKnBppvdzWg/edit?usp=sharing" target="blank" rel="noreferrer">White Paper</a></div>
-      </div> */}
-      
-    </div>
+      <div className={style.wrapper}>
+
+      <div className={style.leftMenu}>
+          <div className={style.logo}>SafeGo</div>
+          <div className={style.menuItem}>Ride</div>
+          <div className={style.menuItem}>Drive</div>
+          <div className={style.menuItem}>More</div>
+      </div>
+
+      <div className={style.rightMenu}>
+          <div className={style.menuItem}>Help</div>
+          {/* <div className={style.menuItem}>{currentUser.name?.split(' ')[0]}</div> */}
+          <div className={style.userImageContainer}>
+              <Image
+                  className={style.userImage}
+                  src={walletlogo}
+                  width={40}
+                  height={40}
+              />
+          </div>
+          {/* {currentAccount ? (
+          <div>
+              {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
+          </div>
+          ) : (
+          <div className={style.loginButton} onClick={() => connectWallet()}>
+              <BsPerson />
+              <span className={style.loginText}>Log in</span>
+          </div>
+          )} */}
+      </div>
+      </div>
   )
 }
 
