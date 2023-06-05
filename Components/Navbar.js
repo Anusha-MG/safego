@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import walletlogo from '../assets/walletlogo.png'
-// import { BsPerson } from 'react-icons/bs'
+import { BsPerson } from 'react-icons/bs'
 // import { useContext } from 'react'
 // import { SolWagContext } from '../context/solWagContext'
 // import SolWagLogo from '../assets/SolWagLogo.png'

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '../Components/Navbar';
+import Map from '../Components/Map';
 
 const style = {
   wrapper: `h-screen w-screen flex flex-col`,
@@ -15,17 +16,16 @@ export default function Home() {
   return (
     <div className={style.wrapper}>
       <Navbar />
-      {/* 
       <div className={style.main}>
         <Map />
       </div>
       <div className={style.rideRequestContainer}>
         <div className={style.rideRequest}>
-          <PoolList ride={ride}/>
+          {/* <PoolList ride={ride}/>
           <LocationSelector offer={offer}/>
-          <Confirm offer={offer}/>
+          <Confirm offer={offer}/> */}
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
