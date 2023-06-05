@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Navbar from '../Components/Navbar';
 
 const style = {
   wrapper: `h-screen w-screen flex flex-col`,
@@ -13,7 +14,8 @@ export default function Home() {
   //const { ride, setRide, offer, setOffer } = useContext(SolWagContext);
   return (
     <div className={style.wrapper}>
-      {/* <Navbar />
+      <Navbar />
+      {/* 
       <div className={style.main}>
         <Map />
       </div>
