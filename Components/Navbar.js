@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import walletlogo from '../assets/walletlogo.png'
 import { BsPerson } from 'react-icons/bs'
-// import { useContext } from 'react'
-// import { SolWagContext } from '../context/solWagContext'
+import { useContext } from 'react'
+import { sgContext } from '../context/sgContext'
 // import SolWagLogo from '../assets/SolWagLogo.png'
 
 const style = {
@@ -19,7 +19,7 @@ const style = {
 
 const Navbar = () => {
 
-  //const { currentAccount, connectWallet, currentUser } = useContext(UberContext)
+  const { currentAccount, connectWallet, currentUser } = useContext(sgContext)
 
 
   return (
@@ -34,7 +34,7 @@ const Navbar = () => {
 
       <div className={style.rightMenu}>
           <div className={style.menuItem}>Help</div>
-          {/* <div className={style.menuItem}>{currentUser.name?.split(' ')[0]}</div> */}
+          <div className={style.menuItem}>{currentUser.name?.split(' ')[0]}</div>
           <div className={style.userImageContainer}>
               <Image
                   className={style.userImage}
@@ -43,7 +43,7 @@ const Navbar = () => {
                   height={40}
               />
           </div>
-          {/* {currentAccount ? (
+          {currentAccount ? (
           <div>
               {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <BsPerson />
               <span className={style.loginText}>Log in</span>
           </div>
-          )} */}
+          )}
       </div>
       </div>
   )
